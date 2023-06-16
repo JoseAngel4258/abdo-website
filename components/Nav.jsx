@@ -38,14 +38,14 @@ const Navbar = () => {
         variants={navVariants}
         initial="hidden"
         whileInView="show"
-        className={`flex justify-between items-center bg-white h-20 p-6 md:p-12 w-[89%] m-auto fixed drop-shadow-xl z-20 ${
+        className={`flex justify-between items-center bg-white bg-opacity-[16%] backdrop-filter backdrop-blur-sm h-20 p-6 md:p-12 w-[89%] m-auto fixed drop-shadow-xl z-20 ${
           scrolling
-            ? 'top-0 w-full rounded-none md:p-6'
-            : 'fixed top-[20px] rounded-xl'
+            ? `top-0 w-full rounded-none md:p-6`
+            : 'fixed top-[20px] rounded-xl justify-between'
         }`}
       >
         <div className="flex items-center">
-          <h1 className="text-2xl font-bold italic uppercase text-gray-700">
+          <h1 className="text-2xl font-bold italic uppercase text-white">
             Abdo Icon
           </h1>
         </div>
@@ -53,12 +53,12 @@ const Navbar = () => {
           variants={navButtonVariants}
           initial="hidden"
           whileInView="show"
-          className={`md:flex gap-12 font-medium text-gray-700 [&>li]:cursor-pointer absolute md:static top-[100px] bg-white max-md:p-4 text-center ${
-            openMenu ? '' : 'hidden'
+          className={`md:flex gap-12 font-medium text-white [&>li]:cursor-pointer absolute md:static top-[80px] max-md:p-4 text-center ${
+            openMenu ? 'bg-white bg-opacity-25' : 'hidden'
           } ${
             scrolling && openMenu
-              ? 'top-12 w-full right-0 rounded-b-none'
-              : 'rounded-xl right-7'
+              ? 'top-12 w-full right-0 rounded-b-xl'
+              : 'rounded-b-xl right-7'
           }`}
         >
           <a href="/">
@@ -71,6 +71,12 @@ const Navbar = () => {
             <li className="hover:text-blue-400">Nosotros</li>
           </a>
           <a href="/">
+            <li className="hover:text-blue-400">Oficinas</li>
+          </a>
+          <a href="/">
+            <li className="hover:text-blue-400">Preguntas Frecuentes</li>
+          </a>
+          <a href="/">
             <li className="hover:text-blue-400">Contacto</li>
           </a>
         </motion.ul>
@@ -78,11 +84,11 @@ const Navbar = () => {
         {/* MOBILE MENU ICONS */}
         <div className="md:hidden">
           <button
-            className="text-gray-700"
+            
             onClick={menuHandler}
             aria-label="Menu"
           >
-            {openMenu ? <GrClose size={25} /> : <FiMenu size={25} />}
+            {openMenu ? <GrClose size={25} /> : <FiMenu className='text-white' size={25} />}
           </button>
         </div>
       </motion.nav>

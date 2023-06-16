@@ -34,8 +34,8 @@ export const navButtonVariants = {
     y: 0,
     transition: {
       type: 'spring',
-      stiffness: 115,
-      delay: 0.2
+      stiffness: 69,
+      delay: 0.1
     }
   }
 };

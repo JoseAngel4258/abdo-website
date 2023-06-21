@@ -1,14 +1,10 @@
 'use client';
 
-import styles from '../app/app';
-
-import Image from 'next/image';
+import styles from '../app/style';
 
 import { motion } from 'framer-motion';
 
 import { useRef, useEffect } from 'react';
-
-import { slideIn, textVariant } from '../utils/motion';
 
 const Hero = () => {
   const buttonRef = useRef();
@@ -44,19 +40,22 @@ const Hero = () => {
   });
 
   return (
-    <section className="flex justify-center items-center h-screen w-full overflow-hidden">
-      <div className="flex flex-col items-center justify-center w-[42%] md:w-[60%] px-[64px] xl:px-[84px]  md:mt-0">
-        <motion.h1
-          initial={{ y: 60, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{
-            type: 'spring',
-            duration: 1.25
-          }}
-          className="flex flex-col md:flex-row items-center justify-center text-[36px] md:text-5xl lg:text-6xl xl:text-7xl text-white font-bold italic w-full text-center drop-shadow-2xl mt-[20px] md:mt-0 mb-8"
-        >
-          Internet al servicio de todos.
-        </motion.h1>
+    <section className="flex flex-col md:flex-row justify-center items-center h-[1050px] md:h-screen w-full overflow-hidden">
+      <div className="flex flex-col items-center justify-center w-screen md:w-[60%] px-[64px] xl:px-[7px] mt-[35px] md:-mt-[24px] md:pt-0 pt-[-135px]">
+        <div className="w-screen md:w-full">
+          <motion.h1
+            initial={{ y: 60, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{
+              type: 'spring',
+              duration: 1.25
+            }}
+            className="flex flex-col md:flex-row items-center justify-center text-[51px] md:text-[60px] lg:text-[66px] text-white font-bold w-full text-center drop-shadow-2xl mt-[110px] md:mt-[74px] md:w-full px-[12px] sm:px-[24px] md:px-[6px] lg:px-[44px] text-gradient mb-[21px]"
+          >
+            ¡Internet al servicio de todos!
+          </motion.h1>
+          
+        </div>
         <motion.button
           ref={buttonRef}
           type="button"
@@ -64,9 +63,9 @@ const Hero = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{
             type: 'spring',
-            duration: 1.35
+            duration: 1.4
           }}
-          className="rounded border-2 border-neutral-50 px-[46px] pt-[14px] pb-[12px] text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-100 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200"
+          className="rounded-md border-2 border-neutral-50 px-[46px] pt-[14px] pb-[12px] text-sm md:text-[15px] font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-100 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 text-gradient"
         >
           Ver más...
         </motion.button>
@@ -78,10 +77,10 @@ const Hero = () => {
           type: 'spring',
           duration: 1.5
         }}
-        className="w-[58%] md:w-[40%] -mt-[25px] md:mt-0"
+        className="w-[430px] md:w-[40%] -mt-[25px] md:mt-0"
       >
         <div
-          className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}
+          className={`flex-1 flex ${styles.flexCenter} md:my-0 mt-14 relative left`}
         >
           <div>
             <img
@@ -90,39 +89,8 @@ const Hero = () => {
               className="object-cover relative z-[5]"
             />
           </div>
-          {/* gradient start */}
-          <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
-          <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
-          <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
-          {/* gradient end */}
         </div>
       </motion.div>
-
-      <div className="background relative -z-50">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
     </section>
   );
 };

@@ -65,10 +65,10 @@ const Navbar = () => {
             <li className="hover:text-blue-400">Inicio</li>
           </a>
           <a href="/">
-            <li className="hover:text-blue-400">Planes</li>
+            <li className="hover:text-blue-400">Nosotros</li>
           </a>
           <a href="/">
-            <li className="hover:text-blue-400">Nosotros</li>
+            <li className="hover:text-blue-400">Planes</li>
           </a>
           <a href="/">
             <li className="hover:text-blue-400">Oficinas</li>

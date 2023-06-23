@@ -51,7 +51,7 @@ const Navbar = () => {
           variants={navButtonVariants}
           initial="hidden"
           whileInView="show"
-          className={`md:flex flex-row gap-12 font-medium text-white [&>li]:cursor-pointer static top-[80px] p-4 text-center hidden block ${
+          className={`md:flex flex-row gap-12 font-medium text-white [&>li]:cursor-pointer static top-[80px] p-4 text-center hidden ${
             openMenu ? 'hidden' : ''
           } ${
             scrolling && openMenu

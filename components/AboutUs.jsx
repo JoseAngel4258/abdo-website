@@ -109,9 +109,7 @@ const AboutUs = () => (
             </h4>
             <p className="font-poppins font-normal text-dimWhite text-[16px] leading-[24px]">
               Somos una empresa líder en servicios de internet, comprometida con
-              la excelencia y la satisfacción del cliente. Nuestro objetivo es
-              proporcionarle una experiencia digital excepcional que supere sus
-              expectativas.
+              la excelencia y la satisfacción del cliente.
             </p>
           </div>
         </motion.div>
@@ -141,9 +139,8 @@ const AboutUs = () => (
               100% Seguridad
             </h4>
             <p className="font-poppins font-normal text-dimWhite text-[16px] leading-[24px]">
-              En Abdo77, tu seguridad es nuestra prioridad número uno. Estamos
-              comprometidos en brindarte una experiencia en línea protegida y
-              confiable.
+              Estamos comprometidos en brindarte una experiencia en línea
+              protegida y confiable.
             </p>
           </div>
         </motion.div>
@@ -173,10 +170,8 @@ const AboutUs = () => (
               Velocidad
             </h4>
             <p className="font-poppins font-normal text-dimWhite text-[16px] leading-[24px]">
-              En Abdo77, nos enorgullece ofrecerte la velocidad que necesitas
-              para conquistar el mundo digital. Nuestra conexión ultrarrápida te
-              brinda la capacidad de descargar, transmitir y explorar con una
-              velocidad sin precedentes.
+              Nuestra conexión ultrarrápida te brinda la capacidad de descargar,
+              transmitir y explorar con una velocidad sin precedentes.
             </p>
           </div>
         </motion.div>

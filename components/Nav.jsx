@@ -44,22 +44,20 @@ const Navbar = () => {
             : 'fixed top-[20px] rounded-xl justify-between'
         }`}
       >
-        <div className="flex items-center">
-          <h1 className="text-2xl font-bold italic uppercase text-white">
-            Abdo Icon
-          </h1>
+        <div className="flex items-center justify-center">
+          <img className="w-[240px]" src="/abdologo.png" alt="abdo_logo" />
         </div>
         <motion.ul
           variants={navButtonVariants}
           initial="hidden"
           whileInView="show"
-          className={`md:flex gap-12 font-medium text-white [&>li]:cursor-pointer absolute md:static top-[80px] max-md:p-4 text-center ${
-            openMenu ? 'bg-white bg-opacity-25' : 'hidden'
+          className={`md:flex flex-row gap-12 font-medium text-white [&>li]:cursor-pointer static top-[80px] p-4 text-center hidden block ${
+            openMenu ? 'hidden' : ''
           } ${
             scrolling && openMenu
-              ? 'top-12 w-full right-0 rounded-b-xl'
+              ? 'top-12 w-full rounded-b-xl'
               : 'rounded-b-xl right-7'
-          }`}
+          } ${window.scrollY != 0 ? '' : ''}`}
         >
           <a href="/">
             <li className="hover:text-blue-400">Inicio</li>
@@ -83,12 +81,12 @@ const Navbar = () => {
 
         {/* MOBILE MENU ICONS */}
         <div className="md:hidden">
-          <button
-            
-            onClick={menuHandler}
-            aria-label="Menu"
-          >
-            {openMenu ? <GrClose size={25} /> : <FiMenu className='text-white' size={25} />}
+          <button onClick={menuHandler} aria-label="Menu">
+            {openMenu ? (
+              <GrClose size={25} />
+            ) : (
+              <FiMenu className="text-white" size={25} />
+            )}
           </button>
         </div>
       </motion.nav>

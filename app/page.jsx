@@ -1,7 +1,8 @@
 import AboutUs from '@/components/AboutUs';
+import Explore from '@/components/Explore';
 import Hero from '@/components/Hero';
 import Nav from '@/components/Nav';
-import Prices from '@/components/Prices';
+
 
 export default function Home() {
   return (
@@ -9,7 +10,8 @@ export default function Home() {
       <Nav />
       <Hero />
       <AboutUs />
-      <Prices />
+      <Explore />
+  
       <div className="background relative -z-50">
         <span></span>
         <span></span>

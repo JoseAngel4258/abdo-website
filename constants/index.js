@@ -1,201 +1,82 @@
-import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox  } from "../assets";
+export const exploreWorlds = [
+  {
+    id: 'world-1',
+    imgUrl: '/family.jpg',
+    title: 'Plan de 30 mbps',
+    price: '¡Por tan solo 20$!'
+  },
+  {
+    id: 'world-2',
+    imgUrl: '/gaming.jpg',
+    title: 'Plan de 60 mbps',
+    price: '¡Por tan solo 25$!'
+  },
+  {
+    id: 'world-3',
+    imgUrl: '/company.jpg',
+    title: 'Plan de 100 mbps',
+    price: '¡Por tan solo 30$!'
+  },
+  
+];
 
-import Send from "../public/Send.svg"
-import Shield from "../public/Shield.svg"
-import Star from "../public/Star.svg"
+export const startingFeatures = [
+  'Find a world that suits you and you want to enter',
+  'Enter the world by reading basmalah to be safe',
+  'No need to beat around the bush, just stay on the gas and have fun',
+];
 
-export const navLinks = [
+export const newFeatures = [
   {
-    id: "home",
-    title: "Home",
+    imgUrl: '/vrpano.svg',
+    title: 'A new world',
+    subtitle:
+        'we have the latest update with new world for you to try never mind',
   },
   {
-    id: "features",
-    title: "Features",
-  },
-  {
-    id: "product",
-    title: "Product",
-  },
-  {
-    id: "clients",
-    title: "Clients",
+    imgUrl: '/headset.svg',
+    title: 'More realistic',
+    subtitle:
+        'In the latest update, your eyes are narrow, making the world more realistic than ever',
   },
 ];
 
-export const features = [
+export const insights = [
   {
-    id: "feature-1",
-    icon: Send,
-    title: "Rewards",
-    content:
-      "The best credit cards offer some tantalizing combinations of promotions and prizes",
+    imgUrl: '/planet-06.png',
+    title: 'The launch of the Metaverse makes Elon musk ketar-ketir',
+    subtitle:
+        'Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Diam maecenas sed enim ut sem viverra alique.',
   },
   {
-    id: "feature-2",
-    icon: Shield,
-    title: "100% Secured",
-    content:
-      "We take proactive steps make sure your information and transactions are secure.",
+    imgUrl: '/planet-07.png',
+    title: '7 tips to easily master the madness of the Metaverse',
+    subtitle:
+        'Vitae congue eu consequat ac felis donec. Et magnis dis parturient montes nascetur ridiculus mus. Convallis tellus id interdum',
   },
   {
-    id: "feature-3",
-    icon: Star,
-    title: "Balance Transfer",
-    content:
-      "A balance transfer credit card can save you a lot of money in interest charges.",
+    imgUrl: '/planet-08.png',
+    title: 'With one platform you can explore the whole world virtually',
+    subtitle:
+        'Quam quisque id diam vel quam elementum. Viverra nam libero justo laoreet sit amet cursus sit. Mauris in aliquam sem',
   },
 ];
 
-export const feedback = [
+export const socials = [
   {
-    id: "feedback-1",
-    content:
-      "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
-    name: "Herman Jensen",
-    title: "Founder & Leader",
-    img: people01,
+    name: 'twitter',
+    url: '/twitter.svg',
   },
   {
-    id: "feedback-2",
-    content:
-      "Money makes your life easier. If you're lucky to have it, you're lucky.",
-    name: "Steve Mark",
-    title: "Founder & Leader",
-    img: people02,
+    name: 'linkedin',
+    url: '/linkedin.svg',
   },
   {
-    id: "feedback-3",
-    content:
-      "It is usually people in the money business, finance, and international trade that are really rich.",
-    name: "Kenn Gallagher",
-    title: "Founder & Leader",
-    img: people03,
-  },
-];
-
-export const prices = [
-  {
-    id: "price-1",
-    service: "Plan 30Mbps",
-    price: "20$",
+    name: 'instagram',
+    url: '/instagram.svg',
   },
   {
-    id: "price-2",
-    service: "Plan 60Mbps",
-    price: "25$",
-  },
-  {
-    id: "price-3",
-    service: "Plan 100Mbps",
-    price: "30$",
-  },
-];
-
-export const footerLinks = [
-  {
-    title: "Useful Links",
-    links: [
-      {
-        name: "Content",
-        link: "https://www.hoobank.com/content/",
-      },
-      {
-        name: "How it Works",
-        link: "https://www.hoobank.com/how-it-works/",
-      },
-      {
-        name: "Create",
-        link: "https://www.hoobank.com/create/",
-      },
-      {
-        name: "Explore",
-        link: "https://www.hoobank.com/explore/",
-      },
-      {
-        name: "Terms & Services",
-        link: "https://www.hoobank.com/terms-and-services/",
-      },
-    ],
-  },
-  {
-    title: "Community",
-    links: [
-      {
-        name: "Help Center",
-        link: "https://www.hoobank.com/help-center/",
-      },
-      {
-        name: "Partners",
-        link: "https://www.hoobank.com/partners/",
-      },
-      {
-        name: "Suggestions",
-        link: "https://www.hoobank.com/suggestions/",
-      },
-      {
-        name: "Blog",
-        link: "https://www.hoobank.com/blog/",
-      },
-      {
-        name: "Newsletters",
-        link: "https://www.hoobank.com/newsletters/",
-      },
-    ],
-  },
-  {
-    title: "Partner",
-    links: [
-      {
-        name: "Our Partner",
-        link: "https://www.hoobank.com/our-partner/",
-      },
-      {
-        name: "Become a Partner",
-        link: "https://www.hoobank.com/become-a-partner/",
-      },
-    ],
-  },
-];
-
-export const socialMedia = [
-  {
-    id: "social-media-1",
-    icon: instagram,
-    link: "https://www.instagram.com/",
-  },
-  {
-    id: "social-media-2",
-    icon: facebook,
-    link: "https://www.facebook.com/",
-  },
-  {
-    id: "social-media-3",
-    icon: twitter,
-    link: "https://www.twitter.com/",
-  },
-  {
-    id: "social-media-4",
-    icon: linkedin,
-    link: "https://www.linkedin.com/",
-  },
-];
-
-export const clients = [
-  {
-    id: "client-1",
-    logo: airbnb,
-  },
-  {
-    id: "client-2",
-    logo: binance,
-  },
-  {
-    id: "client-3",
-    logo: coinbase,
-  },
-  {
-    id: "client-4",
-    logo: dropbox,
+    name: 'facebook',
+    url: '/facebook.svg',
   },
 ];

@@ -16,6 +16,8 @@ const Navbar = () => {
     setOpenMenu(!openMenu);
   };
 
+  
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -30,6 +32,7 @@ const Navbar = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
+
   }, []);
 
   return (
@@ -51,13 +54,13 @@ const Navbar = () => {
           variants={navButtonVariants}
           initial="hidden"
           whileInView="show"
-          className={`md:flex flex-row gap-12 font-medium text-white [&>li]:cursor-pointer static top-[80px] p-4 text-center hidden ${
+          className={`md:flex flex-row gap-12 font-medium text-white [&>li]:cursor-pointer static top-[80px] p-4 text-center hidden  ${
             openMenu ? 'hidden' : ''
           } ${
             scrolling && openMenu
               ? 'top-12 w-full rounded-b-xl'
               : 'rounded-b-xl right-7'
-          } `}
+          } ${window.scrollY != 0 ? '' : ''}`}
         >
           <a href="/">
             <li className="hover:text-blue-400">Inicio</li>

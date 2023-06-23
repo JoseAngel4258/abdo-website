@@ -57,7 +57,7 @@ const Navbar = () => {
             scrolling && openMenu
               ? 'top-12 w-full rounded-b-xl'
               : 'rounded-b-xl right-7'
-          } ${window.scrollY != 0 ? '' : ''}`}
+          } `}
         >
           <a href="/">
             <li className="hover:text-blue-400">Inicio</li>

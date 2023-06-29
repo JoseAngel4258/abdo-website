@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import styles, { layout } from '../app/style';
 
 const AboutUs = () => (
-  <section className="px-[25px]">
+  <section className="px-[25px]" id='aboutus'>
     <div className="flex flex-col md:flex-row justify-center items-center w-full mb-[45px] md:mb-[124px]">
       <motion.h1
         initial="hidden"

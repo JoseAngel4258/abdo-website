@@ -1,7 +1,7 @@
 import AboutUs from '@/components/AboutUs';
 import Explore from '@/components/Explore';
 import Hero from '@/components/Hero';
-import Nav from '@/components/Nav';
+import Nav from '@/components/Navbar';
 
 
 export default function Home() {

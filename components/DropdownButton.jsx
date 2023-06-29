@@ -8,10 +8,10 @@ export default function DropdownButton() {
       <div>
         <Menu as="div" className="relative inline-block text-left">
           <div>
-            <Menu.Button className="inline-flex items-center w-full justify-center rounded-md bg-opacity-20 text-md font-[17.5px] text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
+            <Menu.Button className="inline-flex items-center w-full justify-center rounded-md bg-opacity-20 text-md font-[17.5px] text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 text-gradient1">
               Más
               <ChevronDownIcon
-                className="ml-2 -mr-1 h-5 w-5 text-violet-200 hover:text-violet-100"
+                className="ml-2 -mr-1 h-5 w-5 text-violet-200 hover:text-red-600"
                 aria-hidden="true"
               />
             </Menu.Button>
@@ -32,7 +32,7 @@ export default function DropdownButton() {
                     {({ active }) => (
                       <button
                         className={`${
-                          active ? 'bg-violet-500' : 'text-white'
+                          active ? 'bg-red-600 transition-all' : 'text-white'
                         } group flex w-full items-center justify-center rounded-md px-2 py-2 text-sm mb-1`}
                       >
                         <a href="#preguntas">Preguntas</a>
@@ -43,7 +43,7 @@ export default function DropdownButton() {
                     {({ active }) => (
                       <button
                         className={`${
-                          active ? 'bg-violet-500' : 'text-white'
+                          active ? 'bg-red-600 transition-all' : 'text-white'
                         } group flex w-full items-center justify-center rounded-md px-2 py-2 text-sm`}
                       >
                         <a href="#oficinas">Oficinas</a>

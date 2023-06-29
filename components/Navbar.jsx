@@ -52,25 +52,25 @@ const Navbar = () => {
             scrolling ? 'top-12 w-full rounded-b-xl justify-end' : ''
           }`}
         >
-          <a href="#inicio">
-            <li className="hover:text-blue-400">Inicio</li>
+          <a href="/">
+            <li className="text-gradient1 transition-all">Inicio</li>
           </a>
           <a href="#nosotros">
-            <li className="hover:text-blue-400">Nosotros</li>
+            <li className="text-gradient1 transition-all">Nosotros</li>
           </a>
           <a href="#planes">
-            <li className="hover:text-blue-400">Planes</li>
+            <li className="text-gradient1 transition-all">Planes</li>
           </a>
 
           <DropdownButton />
 
           <a href="#contacto">
-            <li className="hover:text-blue-400">Contacto</li>
+            <li className="text-gradient1 transition-all">Contacto</li>
           </a>
         </ul>
 
         {/* Menu responsive */}
-        <div className="md:hidden">
+        <div className="md:hidden ">
           <NavbarMenu />
         </div>
       </motion.nav>

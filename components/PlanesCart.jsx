@@ -5,7 +5,16 @@ import { motion } from 'framer-motion';
 import styles from '../app/style';
 import { fadeIn } from '../utils/motion';
 
-const ExploreCard = ({ id, imgUrl, title, price, index, active, handleClick }) => (
+const PlanesCart = ({
+  id,
+  imgUrl,
+  title,
+  price,
+  index,
+  icon,
+  active,
+  handleClick
+}) => (
   <motion.div
     variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
     className={`relative overflow-hidden ${
@@ -27,11 +36,7 @@ const ExploreCard = ({ id, imgUrl, title, price, index, active, handleClick }) =
         <div
           className={`${styles.flexCenter} w-[60px] h-[60px] rounded-[24px] glassmorphism mb-[16px]`}
         >
-          <img
-            src="/headset.svg"
-            alt="headset"
-            className="w-1/2 h-1/2 object-contain"
-          />
+          <img src={icon} alt="icon" className="w-1/2 h-1/2 object-contain"/>
         </div>
         <p className="font-normal text-[18px] leading-[19.16px] text-white uppercase">
           {price}
@@ -44,4 +49,4 @@ const ExploreCard = ({ id, imgUrl, title, price, index, active, handleClick }) =
   </motion.div>
 );
 
-export default ExploreCard;
+export default PlanesCart;

@@ -6,26 +6,27 @@ import { motion } from 'framer-motion';
 import styles from '../app/style';
 import { exploreWorlds } from '../constants';
 import { staggerContainer } from '../utils/motion';
-import { ExploreCard, TitleText } from '../components';
-import { TypingText } from '../components';
+import { ExploreCard, TitleText } from '.';
+import { TypingText } from '.';
 
-const Explore = () => {
+const Planes = () => {
   const [active, setActive] = useState('world-2');
 
   return (
-    <section className={`${styles.paddings}`} id="explore">
+    <section className={`${styles.paddings}`} id="planes">
       <motion.div
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
+        viewport={{ once: true, amount: 0.5 }}
         className={`${styles.innerWidth} mx-auto flex flex-col`}
       >
         <TypingText title="| Velocidad sin límites" textStyles="text-center" />
         <TitleText
           title={
             <>
-              ¡Escoge el plan de internet <br className="md:block hidden" /> que prefieras!
+              ¡Escoge el plan de internet <br className="md:block hidden" /> que
+              prefieras!
             </>
           }
           textStyles="text-center"
@@ -46,4 +47,4 @@ const Explore = () => {
   );
 };
 
-export default Explore;
+export default Planes;

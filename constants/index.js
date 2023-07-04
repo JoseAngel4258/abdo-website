@@ -96,7 +96,7 @@ export const features = [
     icon: '/Shield.svg',
     title: 'Seguridad',
     content:
-      'Estamos comprometidos en brindarte una experiencia en línea protegida y confiable.'
+      'Estamos comprometidos en brindarte una experiencia en línea protegida y confiable, sin caídas de servicio de ningún tipo.'
   },
   {
     id: 'feature-3',

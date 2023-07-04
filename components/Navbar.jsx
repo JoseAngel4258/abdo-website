@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 
 import { fadeIn } from '../utils/motion';
-import { navButtonVariants } from '../utils/motion';
 import DropdownButton from './DropdownButton';
 import NavbarMenu from './NavbarMenu';
 
@@ -33,7 +32,7 @@ const Navbar = () => {
         variants={fadeIn('down', 'spring', 0.25, 0.75)}
         initial="hidden"
         whileInView="show"
-        className={`flex flex-row justify-between items-center bg-white bg-opacity-[16%] backdrop-filter backdrop-blur-sm h-20 p-6 md:p-12 w-[89%] m-auto fixed drop-shadow-xl z-20 font-[17.5px] ${
+        className={`flex flex-row justify-between items-center bg-white bg-opacity-[16%] backdrop-filter backdrop-blur-sm h-20 p-6 md:p-12 w-[89%] m-auto fixed drop-shadow-xl shadow-xl z-20 font-[17.5px] ${
           scrolling
             ? 'top-0 w-full rounded-none md:p-6 h-[90px]'
             : 'top-[20px] rounded-xl justify-between'
@@ -62,7 +61,9 @@ const Navbar = () => {
             <li className="text-gradient1 transition-all">Planes</li>
           </a>
 
-          <DropdownButton />
+          <a href="#preguntas">
+            <li className="text-gradient1 transition-all">Preguntas</li>
+          </a>
 
           <a href="#contacto">
             <li className="text-gradient1 transition-all">Contacto</li>

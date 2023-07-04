@@ -9,10 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@headlessui/react": "^1.7.15",
     "@heroicons/react": "^2.0.18",
     "@material/ripple": "^14.0.0",
     "autoprefixer": "10.4.14",
+    "emailjs": "^4.0.2",
     "eslint": "8.42.0",
     "eslint-config-next": "13.4.5",
     "framer-motion": "^10.12.16",

@@ -6,8 +6,9 @@ import { motion } from 'framer-motion';
 import styles from '../app/style';
 import { exploreWorlds } from '../constants';
 import { staggerContainer } from '../utils/motion';
-import { ExploreCard, TitleText } from '.';
+import { TitleText } from '.';
 import { TypingText } from '.';
+import PlanesCart from './PlanesCart';
 
 const Planes = () => {
   const [active, setActive] = useState('world-2');
@@ -18,7 +19,7 @@ const Planes = () => {
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: false, amount: 0.5 }}
         className={`${styles.innerWidth} mx-auto flex flex-col`}
       >
         <TypingText title="| Velocidad sin límites" textStyles="text-center" />
@@ -33,7 +34,7 @@ const Planes = () => {
         />
         <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5">
           {exploreWorlds.map((world, index) => (
-            <ExploreCard
+            <PlanesCart
               key={world.id}
               {...world}
               index={index}

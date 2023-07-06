@@ -6,10 +6,12 @@ import Contacto from '@/components/Contacto';
 import Preguntas from '@/components/Preguntas';
 import AnimatedBG from '@/components/AnimatedBG';
 import Footer from '@/components/Footer';
+import WhatsAppIcon from '@/components/WhatsAppIcon';
 
 export default function Home() {
   return (
     <section className="overflow-hidden">
+    
       <Nav />
       <Hero />
       <Nosotros />
@@ -18,6 +20,7 @@ export default function Home() {
       <Contacto />
       <AnimatedBG />
       <Footer />
+      <WhatsAppIcon />
     </section>
   );
 }

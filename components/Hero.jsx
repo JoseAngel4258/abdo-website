@@ -42,7 +42,7 @@ const Hero = () => {
   });
 
   return (
-    <section className="flex flex-col min-[900px]:flex-row justify-center items-center h-[1600px] min-[768px]:h-[1250px]  min-[900px]:h-screen w-full overflow-hidden">
+    <section className="flex flex-col min-[900px]:flex-row justify-center items-center h-[1600px] min-[768px]:h-[1250px]  min-[900px]:h-screen w-full overflow-hidden min-[1024px]:mt-[150px] min-[1100px]:mt-[50px]" id='hero'>
       <div className="flex flex-col items-center justify-center w-full min-[900px]:w-[60%]  px-[34px] xl:px-[7px] md:mt-[0px] min-[900px]:mt-[96px] mt-[0px] max-[360px]:mt-[-174px] max-[375px]:mt-[-274px] min-[390px]:-mt-[254px] lg:mt-[0px]">
         <div
           className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 max-[375px]:px-2  px-6 min-[1200px]:-ml-[80px] mt-3 min-[1200px]:mt-[30px] `}
@@ -54,7 +54,7 @@ const Hero = () => {
             viewport={{ once: false, amount: 0.5 }}
             className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-5"
           >
-            <img src="/oferta.svg" alt="oferta" className="w-[32px] h-[32px]" />
+            <img src="/oferta.svg" alt="oferta" className="w-[32px] h-[32px] text-red-600" />
             <p className={`${styles.paragraph} ml-2 text-[14px]`}>
               <span className="text-white">Router</span> Instalación{' '}
               <span className="text-white">Fibra </span> 15 días gratis{' '}
@@ -68,7 +68,7 @@ const Hero = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: false, amount: 0.5 }}
-              className="flex-1 font-poppins font-semibold ss:text-[68px] text-[52px] md:text-[56.5px] xl:text-[68px] text-white ss:leading-[100.8px] leading-[75px]"
+              className="flex-1 font-poppins font-semibold ss:text-[68px] text-[52px] md:text-[56.5px] xl:text-[68px] text-white"
             >
               ¡Internet <br className="sm:block hidden" />{' '}
             </motion.h1>
@@ -98,7 +98,7 @@ const Hero = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: false, amount: 0.5 }}
-            className={`${styles.paragraph} max-w-[470px] mt-5 text-[14px]`}
+            className={`${styles.paragraph} max-w-[470px] mt-5 text-[14px] min-[1024px]:mt-[-10px] min-[1100px]:mt-0`}
           >
             En Abdo77 nos especializamos en proveer servicios de Internet.
             Nuestro objetivo es ofrecer a nuestros clientes un servicio de
@@ -114,7 +114,7 @@ const Hero = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: false, amount: 0.5 }}
-              className="rounded-xl border-2 border-neutral-50 px-[46px] pt-[14px] pb-[12px] text-sm md:text-[14px] uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-100  focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 text-gradient font-bold hover:cursor-pointer"
+              className="rounded-xl border-2 border-neutral-50 px-[46px] pt-[14px] pb-[12px] text-sm md:text-[14px] uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-100  focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 text-gradient font-bold hover:cursor-pointer min-[1024px]:mt-[-20px] min-[1024px]:mt-0"
             >
               Ver más...
             </motion.a>
@@ -131,7 +131,7 @@ const Hero = () => {
           duration: 1,
           ease: 'easeOut'
         }}
-        className="w-[500px] md:w-[40%] -mt-[25px] md:mt-0 max-[281px]:w-[90%] max-[281px]:mb-[55px]"
+        className="w-[470px] md:w-[700px] min-[900px]:w-[42%] mt-[25px] md:mt-[70px] min-[900px]:mt-0 max-[280px]:w-[90%] max-[280px]:mb-[35px] max-[280px]:mt-[55px]"
       >
         <div
           className={`flex-1 flex ${styles.flexCenter} md:my-0 mt-14 relative left`}
@@ -140,7 +140,7 @@ const Hero = () => {
             <img
               src="/optic-fiber.png"
               alt="fibra-optica"
-              className="object-cover relative z-[5]"
+              className="object-cover relative z-[5] -scale-x-[1] -scale-y-[1] ml-[-50px]"
             />
           </div>
         </div>

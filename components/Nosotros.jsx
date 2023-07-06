@@ -33,7 +33,7 @@ const FeatureCard = ({ icon, title, content, index }) => (
 );
 
 const Nosotros = () => (
-  <section id="nosotros">
+  <section className="mt-[-220px] md:mt-0" id="nosotros">
     <div className="mb-[62px]">
       <TitleText title={<>¿Quienés somos?</>} textStyles="text-center" />
     </div>
@@ -46,8 +46,10 @@ const Nosotros = () => (
           viewport={{ once: false, amount: 0.5 }}
           className={styles.heading2}
         >
-          Abdo77: Conexión confiable, <br className="sm:block hidden" />{' '}
-          velocidad extraordinaria.
+          Somos <font className="text-gradient">Abdo77</font>: Conexión{' '}
+          <font className="text-gradient">confiable</font>,{' '}
+          <br className="sm:block hidden" /> velocidad{' '}
+          <font className="text-gradient">extraordinaria</font>.
         </motion.h1>
         <motion.p
           variants={fadeIn('right', 'spring', 0.55, 1.05)}

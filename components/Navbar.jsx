@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 
 import { fadeIn } from '../utils/motion';
-import DropdownButton from './DropdownButton';
+
 import NavbarMenu from './NavbarMenu';
 
 const Navbar = () => {
@@ -46,27 +46,26 @@ const Navbar = () => {
           />
         </div>
         <ul
-          
           className={`hidden md:flex flex-row justify-end gap-6 font-medium text-white [&>li]:cursor-pointer static top-[80px] p-4 text-center  ${
             scrolling ? 'top-12 w-full rounded-b-xl justify-end' : ''
           }`}
         >
           <a href="/">
-            <li className="text-gradient1 transition-all">Inicio</li>
+            <li className="hover:text-red-600 transition-all">Inicio</li>
           </a>
           <a href="#nosotros">
-            <li className="text-gradient1 transition-all">Nosotros</li>
+            <li className="hover:text-red-600 transition-all">Nosotros</li>
           </a>
           <a href="#planes">
-            <li className="text-gradient1 transition-all">Planes</li>
+            <li className="hover:text-red-600 transition-all">Planes</li>
           </a>
 
           <a href="#preguntas">
-            <li className="text-gradient1 transition-all">Preguntas</li>
+            <li className="hover:text-red-600 transition-all">Preguntas</li>
           </a>
 
           <a href="#contacto">
-            <li className="text-gradient1 transition-all">Contacto</li>
+            <li className="hover:text-red-600 transition-all">Contacto</li>
           </a>
         </ul>
 

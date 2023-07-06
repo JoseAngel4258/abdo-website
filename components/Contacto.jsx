@@ -114,7 +114,7 @@ const Contacto = () => {
                   variants={fadeIn('right', 'spring', 0.5, 0.85)}
                   initial="hidden"
                   whileInView="show"
-                  class="relative z-[1] block rounded-xl bg-white bg-opacity-[16%] backdrop-filter backdrop-blur-sm px-6 py-12  md:px-12 lg:-mr-14 drop-shadow-xl shadow-lg"
+                  class="relative z-[1] block rounded-xl bg-white bg-opacity-[16%] backdrop-filter backdrop-blur-sm px-6 py-12  md:px-12 lg:mr-6 drop-shadow-xl shadow-lg"
                 >
                   <h2 class="mb-12 text-3xl font-bold text-white">
                     ¡Contáctanos!
@@ -194,7 +194,7 @@ const Contacto = () => {
               initial="hidden"
               whileInView="show"
               class="md:mb-12 lg:mb-0">
-                <div class="relative h-[700px] rounded-lg shadow-lg dark:shadow-black/20">
+                <div class="relative h-[700px] rounded-xl shadow-lg dark:shadow-black/20">
                   <iframe
                     src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=36M9+9P8,%20Troncal11,%20G%C3%BCig%C3%BCe%202010,%20Carabobo+(My%20BusinInversiones%20ABDO%2077%20C.A.ess%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
                     class="absolute left-0 top-0 h-full w-full rounded-lg"

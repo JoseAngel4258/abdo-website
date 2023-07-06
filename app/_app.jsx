@@ -1,19 +1,11 @@
-import "tw-elements/dist/css/tw-elements.min.css";
-
-import "@/styles/globals.css";
-import { Roboto } from "next/font/google";
-
-const roboto = Roboto({ weight: "400", subsets: ["latin"] });
-
-export default function App({ Component, pageProps }) {
+export default function Home() {
   return (
-    <>
-      <style jsx global>{`
-        html {
-          font-family: ${roboto.style.fontFamily};
-        }
-      `}</style>
-      <Component {...pageProps} />
-    </>
+    <div className="min-h-[200vw]">
+      <img
+        className="fixed top-1/2 left-1/4 w-96"
+        src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/logo-new-2.svg"
+        alt=""
+      />
+    </div>
   );
 }

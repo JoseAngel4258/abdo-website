@@ -39,7 +39,7 @@ export default function NavbarMenu() {
           leaveTo="transform opacity-0 scale-95"
         >
           <div className="flex justify-center absolute right-18 hover:cursor-pointer z-20">
-            <Menu.Items className="absolute top-12 -right-8 w-[150px] origin-top-right divide-y divide-gray-100 rounded-md bg-black bg-opacity-[16%] backdrop-filter backdrop-blur-sm shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+            <Menu.Items className="absolute top-12 -right-8 w-[150px] origin-top-right divide-y divide-gray-100 rounded-md bg-gray-400 bg-opacity-[30%] backdrop-filter backdrop-blur-md shadow-lg focus:outline-none">
               <div className="px-1 py-1 ">
                 <Menu.Item>
                   {({ active }) => (
@@ -49,7 +49,7 @@ export default function NavbarMenu() {
                         active ? 'bg-red-600 font-bold' : 'text-white'
                       } group flex w-full items-center justify-center rounded-md px-2 py-2 text-sm mb-1`}
                     >
-                      <a href="#inicio">Inicio</a>
+                      <a href="#hero">Inicio</a>
                     </button>
                   )}
                 </Menu.Item>
@@ -74,18 +74,6 @@ export default function NavbarMenu() {
                       } group flex w-full items-center justify-center rounded-md px-2 py-2 text-sm`}
                     >
                       <a href="#planes">Planes</a>
-                    </button>
-                  )}
-                </Menu.Item>
-                <Menu.Item>
-                  {({ active }) => (
-                    <button
-                      onClick={menuHandler}
-                      className={`${
-                        active ? 'bg-red-600 font-bold' : 'text-white'
-                      } group flex w-full items-center justify-center rounded-md px-2 py-2 text-sm`}
-                    >
-                      <a href="#oficinas">Oficinas</a>
                     </button>
                   )}
                 </Menu.Item>

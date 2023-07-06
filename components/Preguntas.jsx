@@ -7,8 +7,8 @@ import { fadeIn, textVariant2 } from '../utils/motion';
 
 const Preguntas = () => {
   return (
-    <section id='preguntas' className="text-white mt-6">
-      <div className="container mx-auto">
+    <section id="preguntas" className="text-white mt-6">
+      <div className="container mx-auto ">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
             <div className="mx-auto mb-[60px] max-w-full text-center lg:mb-20">
@@ -59,21 +59,7 @@ const Preguntas = () => {
               />
             </motion.div>
             <motion.div
-              variants={fadeIn('right', 'spring', 0.6, 0.75)}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: false, amount: 0.5 }}
-            >
-              {' '}
-              <AccordionItem
-                header="¿Qué tipo de planes tienen para el área residencial y el área corporativa?"
-                text="Planes desde 30Mbps hasta 100Mbps."
-              />
-            </motion.div>
-          </div>
-          <div className="w-full px-4 lg:w-1/2">
-            <motion.div
-              variants={fadeIn('left', 'spring', 0.4, 0.75)}
+              variants={fadeIn('right', 'spring', 0.4, 0.75)}
               initial="hidden"
               whileInView="show"
               viewport={{ once: false, amount: 0.5 }}
@@ -84,6 +70,21 @@ const Preguntas = () => {
                 tlfTecnico="+58 414-8829287"
               />
             </motion.div>
+          </div>
+          <div className="w-full px-4 lg:w-1/2">
+            <motion.div
+              variants={fadeIn('left', 'spring', 0.6, 0.75)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: false, amount: 0.5 }}
+            >
+              {' '}
+              <AccordionItem
+                header="¿Qué planes tienen para el área residencial y el área corporativa?"
+                text="Planes desde 30Mbps hasta 100Mbps."
+              />
+            </motion.div>
+
             <motion.div
               variants={fadeIn('left', 'spring', 0.5, 0.75)}
               initial="hidden"
@@ -125,7 +126,7 @@ const AccordionItem = ({ header, text, link, tlfPrincipal, tlfTecnico }) => {
     setActive(!active);
   };
   return (
-    <div className="single-faq mb-8 w-full rounded-xl border border-[#F3F4FE] bg-white bg-opacity-[16%] backdrop-filter backdrop-blur-sm p-4 sm:p-8 lg:px-6 xl:px-8 shadow-xl">
+    <div className="mb-8 w-full rounded-xl bg-white bg-opacity-[16%] backdrop-filter backdrop-blur-sm p-4 sm:p-8 lg:px-6 xl:px-8 shadow-xl">
       <button
         className={`faq-btn flex w-full text-left items-center justify-center`}
         onClick={() => handleToggle()}

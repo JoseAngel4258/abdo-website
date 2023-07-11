@@ -11,7 +11,7 @@ const FeatureCard = ({ icon, title, content, index }) => (
     variants={fadeIn('left', 'spring', index * 0.5, 0.75)}
     initial="hidden"
     whileInView="show"
-    viewport={{ once: false, amount: 0.5 }}
+    viewport={{ once: true, amount: 0.5 }}
     className={`flex flex-row p-6 rounded-[20px] ${
       index !== features.length - 1 ? 'mb-6' : 'mb-0'
     } feature-card transition-all`}
@@ -43,7 +43,7 @@ const Nosotros = () => (
           variants={fadeIn('right', 'spring', 0.5, 0.85)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.5 }}
           className={styles.heading2}
         >
           Somos <font className="text-gradient">Abdo77</font>: Conexión{' '}
@@ -55,7 +55,7 @@ const Nosotros = () => (
           variants={fadeIn('right', 'spring', 0.55, 1.05)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.5 }}
           className={`${styles.paragraph} max-w-[470px] mt-5 p-3`}
         >
           En Abdo77, nos dedicamos a proporcionar servicios de Internet de alta

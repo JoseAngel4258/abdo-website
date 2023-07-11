@@ -22,7 +22,7 @@ const Preguntas = () => {
                 variants={textVariant2}
                 initial="hidden"
                 whileInView="show"
-                viewport={{ once: false, amount: 0.5 }}
+                viewport={{ once: true, amount: 0.5 }}
                 className="text-base text-body-color"
               >
                 Estas son algunas de las preguntas más frecuentes que suelen
@@ -38,7 +38,7 @@ const Preguntas = () => {
               variants={fadeIn('right', 'spring', 0.4, 0.75)}
               initial="hidden"
               whileInView="show"
-              viewport={{ once: false, amount: 0.5 }}
+              viewport={{ once: true, amount: 0.5 }}
             >
               <AccordionItem
                 header="¿A qué zonas de Güigüe llega Abdo77?"
@@ -50,7 +50,7 @@ const Preguntas = () => {
               variants={fadeIn('right', 'spring', 0.5, 0.75)}
               initial="hidden"
               whileInView="show"
-              viewport={{ once: false, amount: 0.5 }}
+              viewport={{ once: true, amount: 0.5 }}
             >
               <AccordionItem
                 header="¿Cómo realizo mi solicitud de instalación?"
@@ -62,7 +62,7 @@ const Preguntas = () => {
               variants={fadeIn('right', 'spring', 0.4, 0.75)}
               initial="hidden"
               whileInView="show"
-              viewport={{ once: false, amount: 0.5 }}
+              viewport={{ once: true, amount: 0.5 }}
             >
               <AccordionItem
                 header="¿Cómo contacto al servicio técnico?"
@@ -76,7 +76,7 @@ const Preguntas = () => {
               variants={fadeIn('left', 'spring', 0.6, 0.75)}
               initial="hidden"
               whileInView="show"
-              viewport={{ once: false, amount: 0.5 }}
+              viewport={{ once: true, amount: 0.5 }}
             >
               {' '}
               <AccordionItem
@@ -89,7 +89,7 @@ const Preguntas = () => {
               variants={fadeIn('left', 'spring', 0.5, 0.75)}
               initial="hidden"
               whileInView="show"
-              viewport={{ once: false, amount: 0.5 }}
+              viewport={{ once: true, amount: 0.5 }}
             >
               {' '}
               <AccordionItem
@@ -102,7 +102,7 @@ const Preguntas = () => {
               variants={fadeIn('left', 'spring', 0.6, 0.75)}
               initial="hidden"
               whileInView="show"
-              viewport={{ once: false, amount: 0.5 }}
+              viewport={{ once: true, amount: 0.5 }}
             >
               <AccordionItem
                 header="¿Se cae la conexión si llueve?"

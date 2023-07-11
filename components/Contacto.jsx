@@ -114,6 +114,7 @@ const Contacto = () => {
                   variants={fadeIn('right', 'spring', 0.5, 0.85)}
                   initial="hidden"
                   whileInView="show"
+                  viewport={{ once: true, amount: 0.5 }}
                   class="relative z-[1] block rounded-xl bg-white bg-opacity-[16%] backdrop-filter backdrop-blur-sm px-6 py-12  md:px-12 lg:mr-6 drop-shadow-xl shadow-lg"
                 >
                   <h2 class="mb-12 text-3xl font-bold text-white">
@@ -181,6 +182,7 @@ const Contacto = () => {
                       <motion.button
                         ref={buttonRef}
                         type="submit"
+                        viewport={{ once: true, amount: 0.5 }}
                         className="rounded-xl border-[2px] border-neutral-50 px-[46px] pt-[14px] pb-[12px] text-sm leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-100 hover:bg-opacity-10 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 font-bold hover:cursor-pointer w-[100px] flex items-center justify-center"
                       >
                         {loading ? 'Enviando...' : 'Enviar'}
@@ -193,6 +195,7 @@ const Contacto = () => {
               variants={fadeIn('left', 'spring', 0.5, 0.85)}
               initial="hidden"
               whileInView="show"
+              viewport={{ once: true, amount: 0.5 }}
               class="md:mb-12 lg:mb-0">
                 <div class="relative h-[700px] rounded-xl shadow-lg dark:shadow-black/20">
                   <iframe

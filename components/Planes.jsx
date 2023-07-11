@@ -19,7 +19,7 @@ const Planes = () => {
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.5 }}
         className={`${styles.innerWidth} mx-auto flex flex-col`}
       >
         <TypingText title="| Velocidad sin límites" textStyles="text-center" />

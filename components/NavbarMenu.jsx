@@ -46,7 +46,7 @@ export default function NavbarMenu() {
                     <button
                       onClick={menuHandler}
                       className={`${
-                        active ? 'bg-red-600 font-bold' : 'text-white'
+                        active ? 'bg-red-600 font-bold text-white' : 'text-white'
                       } group flex w-full items-center justify-center rounded-md px-2 py-2 text-sm mb-1`}
                     >
                       <a href="#hero">Inicio</a>
@@ -58,7 +58,7 @@ export default function NavbarMenu() {
                     <button
                       onClick={menuHandler}
                       className={`${
-                        active ? 'bg-red-600 font-bold' : 'text-white'
+                        active ? 'bg-red-600 font-bold text-white' : 'text-white'
                       } group flex w-full items-center justify-center rounded-md px-2 py-2 text-sm`}
                     >
                       <a href="#nosotros">Nosotros</a>
@@ -70,7 +70,7 @@ export default function NavbarMenu() {
                     <button
                       onClick={menuHandler}
                       className={`${
-                        active ? 'bg-red-600 font-bold' : 'text-white'
+                        active ? 'bg-red-600 font-bold text-white' : 'text-white'
                       } group flex w-full items-center justify-center rounded-md px-2 py-2 text-sm`}
                     >
                       <a href="#planes">Planes</a>
@@ -82,7 +82,7 @@ export default function NavbarMenu() {
                     <button
                       onClick={menuHandler}
                       className={`${
-                        active ? 'bg-red-600 font-bold' : 'text-white'
+                        active ? 'bg-red-600 font-bold text-white' : 'text-white'
                       } group flex w-full items-center justify-center rounded-md px-2 py-2 text-sm`}
                     >
                       <a href="#preguntas">Preguntas</a>
@@ -94,7 +94,7 @@ export default function NavbarMenu() {
                     <button
                       onClick={menuHandler}
                       className={`${
-                        active ? 'bg-red-600 font-bold' : 'text-white'
+                        active ? 'bg-red-600 font-bold text-white' : 'text-white'
                       } group flex w-full items-center justify-center rounded-md px-2 py-2 text-sm`}
                     >
                       <a href="#contacto">Contacto</a>
